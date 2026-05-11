@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvDbTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base de données (Room + SQLCipher)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDbDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Les données sont stockées dans une base Room chiffrée avec SQLCipher (AES-256). La clé est stockée dans EncryptedSharedPreferences."
+            app:layout_constraintTop_toBottomOf="@id/tvDbTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- User Section -->
+        <TextView
+            android:id="@+id/tvUserSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Gestion Utilisateur"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/tvDbDescription"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom d'utilisateur"
+            app:layout_constraintTop_toBottomOf="@id/tvUserSection" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@id/etUsername" />
+
+        <Button
+            android:id="@+id/btnAddUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Utilisateur"
+            app:layout_constraintTop_toBottomOf="@id/etEmail" />
+
+        <!-- Note Section -->
+        <TextView
+            android:id="@+id/tvNoteSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Gestion Notes"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/btnAddUser"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titre de la note"
+            app:layout_constraintTop_toBottomOf="@id/tvNoteSection" />
+
+        <EditText
+            android:id="@+id/etNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contenu de la note"
+            app:layout_constraintTop_toBottomOf="@id/etNoteTitle" />
+
+        <Button
+            android:id="@+id/btnAddNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter Note"
+            app:layout_constraintTop_toBottomOf="@id/etNoteContent" />
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Afficher Données"
+            app:layout_constraintTop_toBottomOf="@id/btnAddNote" />
+
+        <TextView
+            android:id="@+id/tvDbResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#F5F5F5"
+            android:padding="8dp"
+            android:minHeight="100dp"
+            app:layout_constraintTop_toBottomOf="@id/btnRefresh"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
