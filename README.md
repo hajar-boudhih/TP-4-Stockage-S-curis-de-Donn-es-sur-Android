@@ -29,15 +29,7 @@ Ce projet est une application de démonstration des meilleures pratiques de stoc
 
 ---
 
-## 📸 Captures d'écran
 
-| Écran de Connexion | Laboratoire de Sécurité | Liste des Notes |
-|:---:|:---:|:---:|
-| ![Connexion](screenshots/login.png) | ![Labo](screenshots/main_lab.png) | ![Notes](screenshots/notes_list.png) |
-
-*(Note : Remplacez les chemins ci-dessus par vos propres captures d'écran dans un dossier `screenshots/`)*
-
----
 
 ## 🛠 Configuration et Installation
 
