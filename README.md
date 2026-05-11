@@ -2,7 +2,7 @@
 
 Ce projet est une application de démonstration des meilleures pratiques de stockage de données sécurisé sur Android, réalisée dans le cadre du TP-4. Elle combine un laboratoire d'exploration des différentes méthodes de stockage et une application finale de type Mini-SGBD local entièrement chiffré.
 
-## 🚀 Fonctionnalités implémentées
+##  Fonctionnalités implémentées
 
 ### 1. Stockage de Fichiers
 - **Stockage Interne** : Utilisation de `MODE_PRIVATE` pour isoler les données de l'application.
@@ -53,7 +53,7 @@ Ce projet est une application de démonstration des meilleures pratiques de stoc
 
 ---
 
-## 📝 Étapes du TP
+##  Étapes du TP
 
 ### Étape 1 : Configuration
 Ajout des permissions dans le `AndroidManifest.xml` (limitation des permissions externes aux anciennes versions d'Android) et configuration du `build.gradle`.
@@ -75,6 +75,6 @@ Fusion de toutes les briques pour créer une application de gestion de notes sé
 
 ---
 
-## 👤 Auteur
+##  Auteur
 **Hajar BOUDHIH**
 [Lien vers le dépôt GitHub](https://github.com/hajar-boudhih/TP-4-Stockage-S-curis-de-Donn-es-sur-Android.git)
